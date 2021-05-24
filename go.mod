@@ -1,5 +1,5 @@
-module github.com/emersion/go-imap-idle
+module github.com/linanh/go-imap-idle
 
-go 1.13
+go 1.16
 
-require github.com/emersion/go-imap v1.0.6
+require github.com/linanh/go-imap v1.1.0

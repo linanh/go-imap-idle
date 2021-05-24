@@ -5,8 +5,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/server"
+	"github.com/linanh/go-imap"
+	"github.com/linanh/go-imap/server"
 )
 
 type Handler struct {

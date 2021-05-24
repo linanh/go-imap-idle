@@ -1,14 +1,14 @@
 package idle
 
 import (
-	"github.com/emersion/go-imap"
-	"github.com/emersion/go-imap/responses"
+	"github.com/linanh/go-imap"
+	"github.com/linanh/go-imap/responses"
 )
 
 // An IDLE response.
 type Response struct {
 	RepliesCh chan []byte
-	Stop   <-chan struct{}
+	Stop      <-chan struct{}
 
 	gotContinuationReq bool
 }
