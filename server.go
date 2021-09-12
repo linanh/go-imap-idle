@@ -18,6 +18,8 @@ func (h *Handler) Handle(conn server.Conn) error {
 	if err := conn.WriteResp(cont); err != nil {
 		return err
 	}
+	conn.SetIdling(true)
+	defer conn.SetIdling(false)
 
 	// Wait for DONE
 	scanner := bufio.NewScanner(conn)
